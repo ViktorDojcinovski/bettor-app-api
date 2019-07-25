@@ -1,0 +1,11 @@
+{
+  "name": "better-api",
+  "version": "1.0.0",
+  "description": "Web application for betters.",
+  "main": "server.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "Viktor Dojchinovski",
+  "license": "MIT"
+}
