@@ -1,8 +1,10 @@
+'use strict';
+
 // ...import the mongoose module
 const mongoose = require('mongoose');
 require('dotenv').config();
 // ...destructure connection credentials from the .env file
-const { MONGO_DB_CONN } = process.env
+const { MONGO_DB_CONN } = process.env;
 // ...set up default mongoose connection
 const mongoDB = MONGO_DB_CONN;
 mongoose.connect(mongoDB, { useNewUrlParser: true })

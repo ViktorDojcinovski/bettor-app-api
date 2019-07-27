@@ -6,7 +6,7 @@
   "scripts": {
     "test": "test",
     "lint": "eslint --ignore-path .gitignore .",
-    "eslint": "eslint --ignore-path .gitignore ."
+    "pretest": "eslint --ignore-path .gitignore ."
   },
   "author": "Viktor Dojchinovski",
   "license": "MIT",

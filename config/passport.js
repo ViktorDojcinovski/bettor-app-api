@@ -1,3 +1,5 @@
+'use strict';
+
 const JwtStrategy = require('passport-jwt').Strategy;
 const ExtractJwt = require('passport-jwt').ExtractJwt;
 const User = require('../models/User.model');
@@ -17,7 +19,7 @@ module.exports = passport => {
         return done(null, false);
       }).catch(err => {
         console.error(err);
-      })
+      });
     })
-  )
-}
+  );
+};
