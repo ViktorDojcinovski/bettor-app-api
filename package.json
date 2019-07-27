@@ -4,8 +4,27 @@
   "description": "Web application for betters.",
   "main": "server.js",
   "scripts": {
-    "test": "test"
+    "test": "test",
+    "lint": "eslint --ignore-path .gitignore .",
+    "eslint": "eslint --ignore-path .gitignore ."
   },
   "author": "Viktor Dojchinovski",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "concurrently": "^4.1.1",
+    "cors": "^2.8.5",
+    "dotenv": "^8.0.0",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.6.6",
+    "passport": "^0.4.0",
+    "passport-jwt": "^4.0.0",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "eslint": "^6.1.0",
+    "eslint-config-strongloop": "^2.1.0"
+  }
 }
