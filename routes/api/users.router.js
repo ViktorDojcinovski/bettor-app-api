@@ -26,6 +26,13 @@ router.post('/register', usersController.registerUser);
 router.post('/login', usersController.loginUser);
 
 /**
+ * @route GET api/users/confirmation
+ * @description Confirm user signup process
+ * @access Public
+ */
+router.post('/confirmation', usersController.confirmUser);
+
+/**
  * @route GET api/users/dashboard
  * @description Route user to the dashboard
  * @access Private
