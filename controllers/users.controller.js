@@ -111,7 +111,7 @@ async function registerUser(req, res, next) {
               subject: 'Account Verification Token',
               text: `
               Hello, 
-              Please verify your account by clicking the link: 
+              Please verify your account by visiting the link: 
               ${origin}/confirmation?token=${verificationToken.token}`,
             };
             transporter.sendMail(mailOptions, function(err) {
@@ -121,8 +121,8 @@ async function registerUser(req, res, next) {
               return res.status(400).json({
                 success: true,
                 message: `
-              User registered.
-              A verification email has been sent to ${user.email}.
+                User registered.
+                A verification email has been sent to ${user.email}.
                 `,
               });
             });

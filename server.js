@@ -1,7 +1,7 @@
 'use strict';
+require('dotenv').config();
 
 // Base setup of the backend app
-require('dotenv').config();
 // Call the dependencies for our REST server:
 // 1. call express
 const express = require('express');
@@ -44,7 +44,7 @@ app.use('/api/users', users);
 // ...set our port
 const port = process.env.PORT || 8001;
 
-const startServer = async() => {
+async function startServer() {
   await promisify(app.listen).bind(app)(port);
   console.log(`Magic happens on port ${port}`);
 };
